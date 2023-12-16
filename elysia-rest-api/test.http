@@ -1,0 +1,21 @@
+POST http://localhost:3000/seed
+Content-Type: application/json
+
+{}
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "first_name": "Andrey",
+  "last_name": "Fadeev",
+  "email": "my@email.com",
+  "about": "Doing videos on Youtube"
+}
+
+###
+GET http://localhost:3000/users?limit=10
+
+###
+
+GET http://localhost:3000/users/1
